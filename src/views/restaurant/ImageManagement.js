@@ -31,6 +31,8 @@ const ImageManagement = () => {
     lunch: [],
     coffee: [],
     wine: [],
+    reservation: [],
+    reviews: [],
   })
   const [selectedFiles, setSelectedFiles] = useState([])
   const [uploading, setUploading] = useState(false)
@@ -68,6 +70,16 @@ const ImageManagement = () => {
       key: 'wine',
       name: `${buttonLabels.wine} Images`,
       description: `Upload and manage images for the ${buttonLabels.wine.toLowerCase()} section`,
+    },
+    {
+      key: 'reservation',
+      name: `${buttonLabels.reservation} Images`,
+      description: `Upload and manage images for the ${buttonLabels.reservation.toLowerCase()} section`,
+    },
+    {
+      key: 'reviews',
+      name: `${buttonLabels.reviews} Images`,
+      description: `Upload and manage images for the ${buttonLabels.reviews.toLowerCase()} section`,
     },
   ]
 
